@@ -1,0 +1,6 @@
+framework module XDFastFunc {
+  umbrella header "XDFastFunc-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_XDFastFunc_Tests {
+  umbrella header "Pods-XDFastFunc_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
