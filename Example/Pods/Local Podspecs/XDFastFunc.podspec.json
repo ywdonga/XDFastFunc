@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of XDFastFunc.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/329720990@qq.com/XDFastFunc",
+  "homepage": "https://github.com/ywdonga/XDFastFunc",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,11 @@
     "329720990@qq.com": "dongyouweie@126.com"
   },
   "source": {
-    "git": "https://github.com/329720990@qq.com/XDFastFunc.git",
+    "git": "https://github.com/ywdonga/XDFastFunc.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "11.0"
   },
   "source_files": "XDFastFunc/Classes/**/*"
 }

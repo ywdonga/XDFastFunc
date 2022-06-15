@@ -98,7 +98,7 @@ extension UICollectionView {
     public func registerNibHeader<T: UIView>(_ hClass: T.Type) {
         let idf = String(describing: hClass)
         let nib = UINib(nibName: idf, bundle: nil)
-        register(nib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: idf)
+        register(nib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: idf)
     }
     
     /// 注册xib Footer
@@ -106,21 +106,21 @@ extension UICollectionView {
     public func registerNibFooter<T: UIView>(_ fClass: T.Type) {
         let idf = String(describing: fClass)
         let nib = UINib(nibName: idf, bundle: nil)
-        register(nib, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: idf)
+        register(nib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: idf)
     }
     
     /// 注册代码 Header
     /// - Parameter hClass: Header类
     public func registerClassHeader<T: UIView>(_ hClass: T.Type) {
         let idf = String(describing: hClass)
-        register(hClass, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: idf)
+        register(hClass, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: idf)
     }
     
     /// 注册代码 Footer
     /// - Parameter fClass: Footer类
     public func registerClassFooter<T: UIView>(_ fClass: T.Type) {
         let idf = String(describing: fClass)
-        register(fClass, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: idf)
+        register(fClass, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: idf)
     }
     
     /// 复用Header
@@ -129,7 +129,7 @@ extension UICollectionView {
     /// - Returns: 对应类型的Header
     public func dequeueReusableHeader<T: UIView>(_ hClass: T.Type, indexPath: IndexPath) -> T! {
         let idf = String(describing: hClass)
-        guard let hView = dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: idf, for: indexPath) as? T else {
+        guard let hView = dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: idf, for: indexPath) as? T else {
             fatalError("\(idf) 未注册")
         }
         return hView
@@ -141,7 +141,7 @@ extension UICollectionView {
     /// - Returns: 对应类型的Footer
     public func dequeueReusableFooter<T: UIView>(_ fClass: T.Type, indexPath: IndexPath) -> T! {
         let idf = String(describing: fClass)
-        guard let fView = dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionFooter, withReuseIdentifier: idf, for: indexPath) as? T else {
+        guard let fView = dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: idf, for: indexPath) as? T else {
             fatalError("\(idf) 未注册")
         }
         return fView
