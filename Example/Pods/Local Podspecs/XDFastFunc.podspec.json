@@ -1,6 +1,6 @@
 {
   "name": "XDFastFunc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of XDFastFunc.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/ywdonga/XDFastFunc",
@@ -13,10 +13,12 @@
   },
   "source": {
     "git": "https://github.com/ywdonga/XDFastFunc.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "XDFastFunc/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "XDFastFunc/Classes/**/*",
+  "swift_version": "5.0"
 }

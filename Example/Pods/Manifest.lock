@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - XDFastFunc (0.1.0)
+  - XDFastFunc (0.1.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  XDFastFunc: 60329725dc89c805204b8ad22235609f11bf3da2
+  XDFastFunc: 26138bd83cb2ef1235521468b99e6922bd5d684d
 
 PODFILE CHECKSUM: 5d75d1ba4121b884b1ae2533becccf841cf35351
 
